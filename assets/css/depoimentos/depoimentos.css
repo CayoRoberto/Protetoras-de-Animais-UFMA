@@ -1,0 +1,129 @@
+.depoimentos{
+  background: #FFFFFF;
+  width: 100%;
+  padding: 5rem 0 3rem;
+}
+
+.container__depoimentos{
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.depoimento__titulo{
+  font-size: 2.125rem;
+  margin-bottom: 4rem;
+  text-align: center;  
+}
+
+.depoimentos__list{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.depoimento{
+  display: flex;
+  flex-direction: column; 
+  gap: 1.5rem;
+  background-color: #F9F9F9;
+  box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.08);
+  border-radius: 0.25rem;
+  align-items: center;
+  height: auto;
+  padding: 1rem 0;
+  margin-bottom: 3rem;
+} 
+
+.depoimento__image{
+  width: 13.125rem;
+  height: 17.5rem;
+  margin: 1.5rem auto;
+}
+
+.depoimento__conteudo{
+  display: flex;
+  flex-direction: column;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  padding-bottom: 1.2rem;
+  
+}
+
+.depoimento__conteudo--texto{
+  font-family: Raleway, sans-serif;
+  color:#0F241D;
+  line-height: 1.5rem;
+  position: relative;
+  text-indent: 1.875rem;
+  margin-bottom: 2.25rem;
+}
+
+.depoimento__conteudo--texto span{
+  font: 700 3rem serif;
+  position: absolute;
+  top: -1rem;
+  left: -1.875rem;
+  color: #FF9700;
+}
+
+.depoimento__conteudo cite{
+  font-family: DM Sans, sans-serif;
+  color: #0F241D;
+  font-style: normal;
+}
+
+.depoimento__link {
+  color: #3c7175;
+  font-weight: 700;
+  transition: all 350ms ease-in-out;
+}
+
+.depoimento__link:hover{
+  background: #FF9700;
+  padding: 0.25rem 0.5rem;
+  border-radius: 10px;
+  color: #FFFFFF;
+}
+
+/* swiper */
+
+.depoimentos__list  .swiper-slide{
+  height: auto;
+}
+
+.depoimentos__list  .swiper-pagination-bullet{
+  width: 0.75rem;
+  height: 0.75rem;
+}
+
+.depoimentos__list .swiper-pagination-bullet-active{
+  background:#FF9700;
+}
+
+@media screen and (min-width: 900px) {
+  .depoimentos {
+    padding-top: 7rem;
+  }
+
+  .depoimento{
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 3rem 4rem;
+  }
+  
+  .depoimento__titulo{
+    margin-bottom: 3.625rem;
+  }
+
+  .depoimento__image {
+    width: 16rem;
+    height: auto;
+    margin: 0;
+  }
+
+  .depoimento__conteudo--texto{
+    max-width: 500px;
+  }
+}

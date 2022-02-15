@@ -1,0 +1,12 @@
+.acoes{
+  display: flex;;
+  flex-direction: column;
+  background:#F9F9F9;
+  padding: 5rem 0 3rem;  
+}
+
+@media screen and (min-width:992px){
+  .acoes{
+    padding-top: 7rem;
+  }
+}  

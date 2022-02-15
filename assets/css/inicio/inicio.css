@@ -1,0 +1,31 @@
+/* #home {
+  overflow: hidden;
+} */
+
+.inicio{
+  background: url('../../img/banner/banner.webp') no-repeat center / cover;
+  background-position-x: 42%;
+  height: 100vh;
+  margin-top: 3.5rem;
+  width: 100%;
+}
+
+.container__inicio{
+  align-items:center;
+  display: flex;
+  justify-content:space-around;
+  flex-direction: column;
+  height: 100%;
+  
+}
+
+@media  screen and (min-width: 992px) {
+
+  .container__inicio{
+    align-items:flex-start;
+    justify-content: center;
+    gap: 2rem;
+    padding: 0;
+  }
+
+} 
